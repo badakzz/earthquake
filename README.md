@@ -5,7 +5,7 @@ L'alarme est paramétrable via une application web développée en PHP. Cette de
 L'application web et la carte Arduino communiquent via des requêtes HTTP :
 -  Un identifiant unique est attribué à l'utilisateur au moment de son inscription.
 -  L'utilisateur paramètre l'heure de son alarme, ce qui modifie en base de donnée la valeur du timestamp qui lui est associé.
-- L'alarme est constamment en train d'envoyer des requêtes HTTP GET à la webapp afin de recuperer un payload JSON. Celui-ci est encodé via une requête SQL à la base de données, et comprend un identifiant et un timestamp. Selon l'identifiant, l'alarme itere sur le payload et récupère le timestamp associé.
+- L'alarme est constamment en train d'envoyer des requêtes HTTP GET à la webapp afin de recuperer un payload JSON. Celui-ci est encodé via une requête SQL à la base de données, et comprend un identifiant et un timestamp. Selon l'identifiant, l'alarme itère sur le payload et récupère le timestamp associé.
 - Selon le timestamp, l'alarme comprend que l'alarme est soit programmée, soit ne l'est pas, soit doit se mettre à vibrer.
 - Quand l'alarme vibre, elle envoie à la webapp une requête HTTP POST comprenant l'identifiant de l'utilisateur et un timestamp de valeur 0. La webapp l’interprète alors et envoie une requête SQL pour mettre à jour la valeur du timestamp liée à l'utilisateur en base de donnée. De ce fait, l'utilisateur a la possibilité sur l'interface vue de la webapp d’éteindre son alarme.
 
