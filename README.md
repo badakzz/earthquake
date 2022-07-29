@@ -11,7 +11,7 @@ L'application web et la carte Arduino communiquent via des requêtes HTTP :
 
 De base, si l'utilisateur se connecte à la webapp sur son téléphone mobile ou sur tablette, il n'aura pas la possibilité d’éteindre son alarme quand elle vibre. Il devra se lever et se connecter depuis un ordinateur pour ce faire. Cette option est paramétrable dans le profil de l'utilisateur.
 
-![alt text](https://imgur.com/QBISImy)
+![image](https://user-images.githubusercontent.com/81807525/181745380-00be77fc-bcc9-4cc0-9884-582fc2bee4fa.png)
 
 ![image](https://user-images.githubusercontent.com/81807525/181739157-f6299435-1780-4e55-9852-2ea768584cdc.png)
 
